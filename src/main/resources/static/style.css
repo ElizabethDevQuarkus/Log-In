@@ -1,0 +1,110 @@
+/* Importamos una fuente limpia y moderna */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Paleta de Colores Pastel */
+:root {
+    --color-fondo: #f9f9f9;     /* Fondo muy claro */
+    --color-tarjeta: #ffffff;   /* Fondo de la tarjeta (blanco puro) */
+    --color-primario: #376062;  /* Azul cielo pastel */
+    --color-secundario: #457b9d; /* Gris azulado para texto */
+    --color-acento: #e63946;    /* Rojo suave para acentos */
+    --color-borde: #ededed;     /* Borde sutil */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-secundario);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-container {
+    background-color: var(--color-tarjeta);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Sombra sutil y elegante */
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.login-container:hover {
+    transform: translateY(-5px); /* Pequeño efecto de elevación al pasar el mouse */
+}
+
+h2 {
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 35px;
+    color: var(--color-secundario);
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 0;
+    /* Eliminamos el fondo y el borde exterior para un look más limpio */
+    background: none; 
+    border: none;
+    border-bottom: 2px solid var(--color-borde); /* Borde inferior suave */
+    color: var(--color-secundario);
+    font-size: 1em;
+    outline: none;
+    transition: border-bottom 0.3s ease;
+}
+
+.input-group input::placeholder {
+    color: #cccccc;
+    font-weight: 300;
+}
+
+.input-group input:focus {
+    border-bottom: 2px solid var(--color-primario); /* Resaltado pastel al enfocar */
+}
+
+.login-button {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--color-primario);
+    border: none;
+    border-radius: 8px;
+    color: var(--color-tarjeta); /* Texto blanco sobre el pastel */
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 30px;
+    box-shadow: 0 5px 15px rgba(168, 218, 220, 0.4); /* Sombra suave del color primario */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #8bbdc0; /* Un tono un poco más oscuro al pasar el mouse */
+    box-shadow: 0 5px 20px rgba(168, 218, 220, 0.6);
+}
+
+.links {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85em;
+    padding: 0 5px;
+}
+
+.links a {
+    color: var(--color-secundario);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 300;
+}
+
+.links a:hover {
+    color: var(--color-acento); /* Acuérdate de usar el color acento para la interacción */
+}
