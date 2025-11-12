@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log In</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Log In</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="login-container">
-        <h2>Log In</h2>
-        <form>
-            <div class="input-group">
-                <input type="text" id="usuario" name="usuario" placeholder="Usuario">
-            </div>
-            <div class="input-group">
-                <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña">
-            </div>
-            
-            <button type="submit" class="login-button">Entrar</button>
-            
-            <div class="links">
-                <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
-                <a href="#" class="create-account">Crear cuenta</a>
-            </div>
-        </form>
-    </div>
+  <div class="login-container">
+    <h2>Log In</h2>
+    <form action="http://localhost:8080/login" method="post">
+      <div class="input-group">
+        <input type="text" id="usuario" name="usuario" placeholder="Usuario" required />
+      </div>
+      <div class="input-group">
+        <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña" required />
+      </div>
+
+      <button type="submit" class="login-button">Entrar</button>
+
+      <div class="links">
+        <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+        <a href="#" class="create-account">Crear cuenta</a>
+      </div>
+    </form>
+  </div>
 </body>
 </html>
